@@ -1,0 +1,61 @@
+nav {
+        background-color: rgb(64, 61, 61);
+        padding: 10px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: rgb(169, 169, 57);
+}
+
+.container{
+    display: flex;
+     flex-wrap: wrap; /*nếu không đủ không gian sẽ xuống hàng  */
+    justify-content: center;
+}
+
+.column {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid;
+    box-sizing: border-box;
+    width: 299px;
+    height: fit-content;
+}
+
+.card button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 3px 132px;
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua button */
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(233, 191, 64);
+    margin: 0px;
+    margin-top: 20px;
+    padding: 1px 0px;
+}
+
