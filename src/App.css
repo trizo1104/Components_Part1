@@ -1,3 +1,4 @@
+/* phần navbar */
 nav {
         background-color: rgb(64, 61, 61);
         padding: 10px 0px;
@@ -12,7 +13,6 @@ nav ul {
 
 nav a{
     text-decoration: none;
-    color: white;
     padding: 10px 20px;
 }
 
@@ -20,42 +20,99 @@ nav a:hover {
     background-color: rgb(169, 169, 57);
 }
 
-.container{
-    display: flex;
-     flex-wrap: wrap; /*nếu không đủ không gian sẽ xuống hàng  */
-    justify-content: center;
-}
+/* phần conten */
 
-.column {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.card img{
+.card img {
     width: 100%;
 }
 
 .card {
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
     text-align: center;
-    border: 1px solid;
-    box-sizing: border-box;
-    width: 299px;
-    height: fit-content;
 }
 
-.card button {
+.btn_detail {
     border: none;
     background-color: black;
+    cursor: pointer;
+    padding: 3px ;
+    margin: 0px;
+} 
+
+.btn_detail a {
+    text-decoration: none;
     color: white;
-    padding: 3px 132px;
-    cursor: pointer; /* Con trỏ chuột khi di chuyển qua button */
 }
 
+.btn_detail button {
+    border: none;
+    background-color: black;
+}
+
+/* phần footer */
 .footer {
     text-align: center;
     background-color: rgb(233, 191, 64);
     margin: 0px;
-    margin-top: 20px;
     padding: 1px 0px;
 }
 
+
+/* popup */
+.overplay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+  .overplay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+  .popup {
+    margin: 70px auto;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+  .popup img{ width: 100%;}
+
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+    .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+    .popup .close {color: red;}
+
+    .popup .close:hover {color: #06D85F;}
+
+    .popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+    
